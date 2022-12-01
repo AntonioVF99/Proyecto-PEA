@@ -1,0 +1,48 @@
+<ul class="BarraNavegacion">
+    <li class="ListadoNavegacion">
+        <a class="ActivadoNavegacion" href="#">PEA</a>
+    </li>
+
+    <li class="ListadoNavegacion" style="float:right">
+        <a class="LinkNavegacion" href="#/login">Iniciar Sesion</a>
+    </li>
+</ul>
+
+<div class="contenedorCentro">
+    <div class="loginposition">
+        <form class="registerform">
+            <div class="logindiv">
+                <h2 class="loginp" >Bienvenido</h2>
+                <p class="loginp">Para empezar crea tu cuenta</p>
+            </div>
+
+            <div class="logindiv">
+                <input [(ngModel)]="usuario.Nombre" class="logininput" type="text" name="nombre" placeholder="Nombre">
+            </div>
+    
+            <div class="logindiv">
+                <input [(ngModel)]="usuario.Apellido" class="logininput" type="text" name="apellidos" placeholder="Apellidos">
+            </div>
+    
+            <div class="logindiv">
+                <input [(ngModel)]="usuario.Correo" class="logininput" type="email" name="email" placeholder="Email">
+            </div>
+    
+            <div class="logindiv">
+                <input [(ngModel)]="usuario.Password" class="logininput" type="password" name="password" placeholder="Password">
+            </div>
+    
+            <div class="logindiv">
+                <button (click)="agregarusuario()" class="loginbutton" type="Submit">Registrar</button>
+            </div>
+    
+            <div class="logindiv">
+                <p class="loginp">¿Ya eres usuario? <a href="#/login">ingresa</a></p>
+            </div>
+    
+        </form>
+    </div>
+</div>
+
+
+
